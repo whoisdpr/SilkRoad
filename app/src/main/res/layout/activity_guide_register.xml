@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".silkroad.GuideRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Foto de perfil -->
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_profile_placeholder"
+            android:background="@drawable/circle_bg"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto de perfil"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar foto"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Nombres -->
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Apellidos -->
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Tipo de Documento -->
+        <Spinner
+            android:id="@+id/spinnerDocumentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Número de Documento -->
+        <EditText
+            android:id="@+id/editDocumentNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de documento"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Fecha de nacimiento -->
+        <TextView
+            android:id="@+id/textBirthDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de nacimiento"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecciona fecha"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="false"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Correo electrónico -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Domicilio -->
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Domicilio"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Selección de idiomas -->
+        <TextView
+            android:id="@+id/textLanguagesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idiomas"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp" />
+
+        <LinearLayout
+            android:id="@+id/languagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+            <!-- Aquí se agregarán dinámicamente chips o checkboxes para idiomas -->
+        </LinearLayout>
+
+        <!-- Botón Guardar perfil -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar perfil"
+            android:backgroundTint="#0077B5"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

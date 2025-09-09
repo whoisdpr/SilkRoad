@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/textTourTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour en Cusco"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textTourDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/09/2025"
+            android:textSize="14sp"
+            android:textColor="#0077B5"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/textTourDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour de 3 días por el Valle Sagrado y Machu Picchu."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAcceptTour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2ECC40"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:id="@+id/btnRejectTour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reject"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF4136"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
